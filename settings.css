@@ -1,0 +1,223 @@
+body {
+    background-color: #0F0F19;
+    font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace !important;
+    
+}
+
+.container {
+
+
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+    
+}
+.settings {
+    filter: none;
+    margin-top: 10vh;
+    
+    width:30%;
+    height:35vh;
+    color:white;
+    z-index: 2;
+    border:1px solid white;
+    border-radius: 7px;
+    background-color: #161622;
+}
+
+.welcome {
+    margin-top: 30px;
+    margin-left: 25px;
+   
+}
+
+.found {
+    
+    margin-left: 26px;
+  
+}
+
+.username {
+    margin-left: 26px;
+    margin-top: 25px;
+}
+
+.email, .password {
+    margin-left: 26px;
+    
+}
+
+.prompt1, .prompt2 {
+    margin-left: 26px;
+    margin-top: 10px;
+    display:inline-block;
+   
+}
+
+
+#check, #check2, .other, .other2, #check0 {
+    width:17.5px;
+    height:17.5px;
+}
+
+#deny, #deny2 {
+    width:21px;
+    height:21px;
+}
+
+.emailPrompt, .passwordPrompt {
+    margin-left: 26px;
+    margin-top: 15px;
+}
+
+.arrow, .emailInput, .arrow2 {
+    position: relative;
+    bottom:15px;
+}
+
+.arrow, .arrow2 {
+    
+    margin-left: 35px;
+    color:red;
+}
+
+.emailInput, .passwordInput {
+   background-color: #0F0F19;
+   border:none;
+   color:white;
+}
+
+.emailError, .passwordError {
+        position:relative;
+        bottom:35px;
+        margin-left: 10vh;
+        font-size: 10px;
+    }
+
+#exit {
+    margin-left: 26px;
+    margin-top: 10px;
+}
+
+
+
+input {
+    background: transparent;
+    fill:none;
+    color:white;
+    border: none;
+    border-bottom: 1px solid gray;
+    
+}
+
+.validate-container {
+    height:35vh;
+    margin:0 auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+#check0 {
+    margin-top: 10px;
+}
+
+#incorrect {
+    color:red;
+    font-size: 10px;
+}
+
+@media  screen and (max-width:1000px) {
+    body {
+        font-size: 12px;
+         
+    }
+
+    .welcome {
+        margin-top: 20px;
+        margin-left: 15px;
+   
+    }
+
+    .found {
+        
+        margin-left: 16px;
+    
+    }
+
+    .username {
+        margin-left: 16px;
+        margin-top: 15px;
+    }
+
+    .email, .password {
+        margin-left: 16px;
+        
+    }
+
+    .prompt1 {
+        margin-left: 16px;
+        margin-top: 10px;
+
+    
+    }
+
+     
+    .settings {
+        width: 55%;
+        height:40vh;
+    }
+
+
+    #check, #check2, #check0 {
+        width:14px;
+        height:14px;
+        margin-left: 15px;
+        margin-bottom: 15px;
+  
+    }
+    
+
+    #deny, #deny2 {
+        width:16px;
+        height:16px;
+        margin-bottom: 15px;
+       
+     
+    }
+
+    .emailInput, .passwordInput {
+        margin-top: 15px;
+        width:60px;
+        height:10px;
+        font-size: 8px;
+    }
+
+    .other, .other2 {
+        width:  14px;
+        height:14px;
+        
+    }
+
+    .emailError, .passwordError {
+        margin-bottom: 20px;
+    }
+
+    .prompt2 {
+        margin-top: 0px;
+        margin-left:15px;
+    }
+
+    .emailError, .passwordError {
+        position:relative;
+        bottom:35px;
+        margin-left: 7vh;
+        font-size: 8px;
+    }
+    
+
+}

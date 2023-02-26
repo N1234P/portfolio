@@ -1,0 +1,21 @@
+
+
+#containerID, #widgetID {
+  /*
+  width:97vw;
+  height:98vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+   */
+   
+   position:absolute;
+   top:50%;
+   left:50%;
+   transform: translate(-50%, -40%);
+
+   
+}
+
+
+

@@ -1,0 +1,439 @@
+* {
+    box-sizing: border-box;
+ }
+ body {
+     
+     background-color: #0F0F19;
+
+    
+     
+     
+ }
+
+
+
+
+.container {
+    display:flex;
+     align-items: center;
+     justify-content: center;
+     min-height: 100vh;
+}
+ nav  {
+    right: 0px;
+    top: 1px;
+    position:absolute;
+    padding: 0.625em;
+    margin-right:1.25em;
+      
+  }
+  
+  
+  
+  nav li {
+      display:inline;
+      padding:15px;
+  }
+  
+  nav li a {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+  }
+
+
+li a:hover {
+ text-shadow: 0 0 10px #fff;
+}
+
+.options {
+
+     display:flex;
+     justify-content: center;
+     align-items: center;     
+ }
+
+
+
+ 
+ .box, .box2 {
+  
+     
+     width:20.625em;
+     height: 28.125em;
+     border-radius: 20px;
+     
+     display:flex;
+     justify-content: center;
+     align-items: center;
+     
+     overflow: hidden;
+     position: relative;
+     top:20px;
+     margin:35px;
+     box-shadow: 16px 14px 20px #0000008c;
+     
+ }
+
+
+
+ .box::after, .box2::after {
+     position: absolute;
+
+     content: '';
+     
+  
+     width:34.375em;
+     height:34.375em;
+  
+     background-image: conic-gradient(transparent, transparent, transparent, #0039a6);
+
+ animation: animate 4s linear infinite;
+ animation-delay: -2s;
+    
+ }
+
+ .box::before, .box2::before {
+     position: absolute;
+
+     
+     
+    
+     content: '';
+     border-radius: 20px;
+    
+     width: 34.375em;
+     height: 34.375em;
+     background-image: conic-gradient(transparent, transparent, transparent, #00ff7f);
+     animation: animate 4s linear infinite;
+ 
+ 
+ }
+
+ .box2::before {
+    background-image: conic-gradient(transparent, transparent, transparent, #ff0052);
+}
+
+ @keyframes animate {
+     0% {
+         transform: rotate(0deg);   
+     }
+     100% {
+         transform: rotate(360deg);
+     }
+ }
+
+ .box span, .box2 span {
+     position: absolute;
+ 
+     inset:5px;
+     border-radius:16px;
+     display:flex;
+     align-items: center;
+     justify-content: center;
+     
+    
+     z-index: 1;
+     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+     background-color: #161622;
+     /*background-image: url("images/space_project.png");
+   
+     background-repeat:no-repeat;
+ background-size:cover;
+     background-position: center center;
+     background-attachment: fixed; */
+ }
+
+ form {
+     position:relative;
+  
+     text-align: center;
+     width:450px;
+     height:450px;
+     color: white;
+ }
+
+
+
+
+
+ .stockImage, .cryptoImage {
+    width:16px;
+    height:15px;
+    margin-right:5px;
+ }
+
+
+ .dropdown input {
+
+     
+     cursor:pointer;
+     width:200px;
+     height:38px;
+     background: #fff;
+     border:none;
+     outline:none;
+     box-shadow: 0 5px 20px rgba(0,0,0,0,0.05);
+
+     padding:12px 20px;
+     border-radius: 10px;
+    
+ }
+
+ .dropdown::before {
+     content: '';
+     
+     position:absolute;
+     right:75px;
+     margin-top: 10px;
+     
+     z-index:1000;
+     width: 6px;
+     height: 6px;
+     border: 2px solid black;
+     border-top: 2px solid white;
+     border-right: 2px solid white;
+     transform: rotate(-45deg);
+     transition: 0.5s;
+     pointer-events: none;
+ }
+
+
+.dropdown.active::before {
+     transform: rotate(-225deg);
+     margin-top: 15px;
+}
+
+
+ .option {
+     position: absolute;
+     top:37%;
+     left:18.7%;
+     color: black;
+     width:200px;
+     margin:0 auto;
+     background-color: white;
+     box-shadow: 0 30px 30px rgba(0,0,0,0,0.05);
+     border-radius: 10px;
+     overflow:hidden;
+     display:none;
+     z-index: 10;
+ }
+
+ .dropdown.active .option {
+     display:block;
+ }
+
+ .option div {
+     padding:12px 20px;
+     cursor: pointer;
+     text-align: left;
+ }
+
+ .option div:hover {
+     background:#62baea;
+     color:white;
+ }
+
+ .option div img {
+     position:relative;
+     top: 4px;
+     font-size: 1.2em;
+ }
+
+ .quantity {
+     border-radius: 10px;
+     width:200px;
+     height:38px;
+     border: none;
+     outline: none;
+   
+     text-align: center;
+ }
+
+ .quantity::placeholder {
+     padding:5px;
+     text-align: center;
+
+ }
+
+ .quantity:active {
+     border: none;
+ }
+
+
+ .add, .remove {
+    width:40px;
+    height: 40px;
+ }
+
+ .highlight {
+    border-radius: 100%;
+    border:3px solid blue;
+ }
+
+ .submit {
+    cursor: pointer;
+    width:100px;
+    height: 30px;
+    display:block;
+    margin:0 auto;
+   
+    border-radius: 15px;
+    position:relative;
+    top:45px;
+ }
+
+
+
+
+ .box2 .submit {
+    position:absolute;
+    top:85%;
+    left:34.5%;
+    background-color: #ff0052;
+    color:black;
+    font-weight: bold;
+ }
+
+ .box .submit {
+    position:absolute;
+    top:85%;
+    left:34%;
+    background-color: #00ff7f;
+    color:black;
+    font-weight: bold;
+    
+ }
+
+ .result_error, .result_success {
+    position:relative;
+    top:10px;
+    margin:0 auto;
+    text-align: center;
+
+ }
+
+ .result_error {
+    color:#ff0052;
+ }
+
+ .result_success {
+
+    color:#00ff7f;
+ }
+
+
+ @media screen and (max-width:800px) {
+    .box, .box2 {
+        width:17em;
+        height: 24em;
+    }
+
+   
+
+    .options {
+        flex-direction: column;
+     }
+
+     nav {
+       position: absolute;
+       top: 0px;
+       right: 1px;
+     }
+     nav li a {
+       font-size: 12px;
+          
+     }
+
+     .box, .box2 {
+       margin-top: 35px;
+     }
+     h1 {
+       font-size: 18px;
+     }
+
+
+
+     form {
+       
+        width:350px;
+        height:350px;
+        
+    }
+   
+   
+   
+   
+   
+    .stockImage, .cryptoImage {
+       width:12px;
+       height:11px;
+       margin-right:5px;
+    }
+   
+   
+    .dropdown input {
+   
+        
+        cursor:pointer;
+        width:165px;
+        height:32px;
+        background: #fff;
+        border:none;
+        outline:none;
+        box-shadow: 0 5px 20px rgba(0,0,0,0,0.05);
+   
+        padding:12px 20px;
+        border-radius: 10px;
+        z-index: 10;
+       
+    }
+   
+    .dropdown::before {
+       
+        right:60px;
+        
+    }
+   
+    .option {
+      
+        top:35%; 
+        width:165px;
+       
+    }
+   
+    
+
+    .quantity {
+        border-radius: 10px;
+        width:165px;
+        height:32px;
+    }
+   
+    
+    .add, .remove {
+       width:30px;
+       height: 30px;
+    }
+   
+   
+   
+    .submit {
+  
+       width:75px;
+       height: 25px;
+     
+      
+    }
+   
+    .result_error, .result_success {
+        position:relative;
+        top:0px;
+        font-size: 12px;
+    
+     }
+    
+   
+    
+ }

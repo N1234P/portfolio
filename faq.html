@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" type="text/css" href="stars.css">
+    <link rel="stylesheet" type="text/css" href="faq.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css">
+
+</head>
+<body>
+    <div>
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </div>
+    <div class="container">  
+       
+    <div id="accordion">
+        <h3 class="item">What is the purpose of this application?</h3>
+        <div>The main goal of this application is to provide a safe and educational environment for users when it comes to investing.</div>
+        
+
+        <h3>Are there any real funds involved?</h3>
+        <div>There are no real funds involved. All funds are nonexistent & virtual.</div>
+        <h3>Can I buy and sell assets similar to a Brokerage/Exchange?</h3>
+        <div>Users will be able to "buy" and "sell" their holdings determined by the virtual funds that the user has added and the changing monetary value of the asset.</div>
+        <h3>Is there a max fund allocation amount?</h3>
+        <div>~$2B USD is the max fund allocation amount. However, it is advisable to use realistic values as this application is intended to simulate a real investing environment.</div>
+    </div>
+</div>
+
+    <script type="text/javascript">
+        $(function() {
+            console.log("hello");
+            $('#accordion').accordion();
+        })
+    </script>
+</body>
+
+
+</html>

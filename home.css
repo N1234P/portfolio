@@ -1,0 +1,262 @@
+body {
+    background-color: #0F0F19;
+    overflow: hidden;
+    
+}
+
+
+.title {
+    
+    height:65vh;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    color:white;
+    
+}
+
+.title h1 {
+    font-size: 3.8em;
+  
+    
+}
+
+.title h3 {
+    margin-top: -35px;
+
+    font-size:larger;
+
+    font-weight: normal;
+    
+}
+
+@media screen and (max-width: 800px) {
+    .title h1 {
+        font-size:2.8em;
+
+    }
+    .title h3 {
+        margin-top: -30px;
+        padding:5px;
+    }
+    
+}
+
+.navigation ul {
+    right: 0px;
+    top: 1px;
+    position:absolute;
+    padding:10px;
+    margin-right:20px;
+    
+}
+
+
+.navigation li {
+    display:inline;
+    padding:15px;
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.github:hover, a:hover {
+
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0 0 10px #fff;
+
+}
+
+.github {
+    width:30px;
+    height:30px;
+    padding:15px;
+}
+
+.loginform {
+    position: absolute;
+    width:240px;
+    height:350px;
+    background-color: #161622;
+    
+    
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -60%);
+    
+    border-radius: 7px;
+    
+}
+
+.blur {
+    filter: blur(2px);
+}
+
+
+
+.bar {
+    margin-left: 100px;
+    margin-top: 45px;
+    color:white;
+    font-size: 18px;
+}
+
+
+
+input, label {
+    display: block;
+    
+ 
+}
+label {
+    margin: 30px 20px 0px 20px;
+    color: #adadad;
+    padding:5px;
+}
+
+.loginform input {
+    font-size: 15px;
+    margin: 10px 20px 0px 22px;
+    width:160px;
+    
+}
+
+
+.email {
+    padding-left: 30px;
+    background: url("images/email.png") no-repeat left;
+    background-size: 13px;
+    color:white;
+    
+}
+
+.password, .password2 {
+    
+    padding-left: 30px;
+    background: url("images/password.png") no-repeat left;
+    background-size: 17px;
+    color:white;
+}
+
+.loginform img, .signform img {
+    width: 15px;
+    height: 15px;
+    padding: 10px;
+  
+}
+
+.loginform #signup {
+    
+    color:white;
+    font-size: 10px;
+    position:relative;
+    left:28px;
+    bottom:5px;
+}
+
+.loginform .submit {
+    margin:40px auto;
+    color:#adadad;
+    font-size:13px;
+    font-style: bold;
+    background-color: #161622;
+    border-radius: 5px;
+    width: 120px;
+    height:30px;
+    border:1px solid white;
+    position:absolute;
+    top:84%;
+    left:25%;
+
+}
+
+.signform {
+    background-color: #161622;
+    border-radius: 7px;
+    width:270px;
+    height:470px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    
+}
+
+.barSign {
+    color:white;
+    text-align: center;
+    margin:0 auto;
+    font-size: 20px;
+    position:relative;
+    left:20px;
+    top:20px;
+}
+
+.signform input {
+    
+    font-size: 15px;
+    margin: 10px 20px 0px 22px;
+    width:180px;
+    
+
+}
+
+.signform .submit {
+    border:2px solid white;
+    margin:40px auto;
+    color:#adadad;
+    font-size:13px;
+    font-style: bold;
+    background-color: #161622;
+    border-radius: 5px;
+    width: 120px;
+    height:30px;
+    border:1px solid white;
+    position:absolute;
+    top:88%;
+    left:27%;
+}
+
+.signform .username {
+    padding-left: 30px;
+    background: url("images/user-modified.png") no-repeat left;
+    background-size: 17px;
+    color:white;
+}
+
+input {
+    border-radius: 5px;
+}
+
+.error {
+    color:red;
+    font-size: 11px;
+    
+    margin:0 auto;
+    text-align: center;
+    position:relative;
+    top:10%;
+}
+
+.error_sign {
+    color:red;
+    font-size:11px;
+    margin:0 auto;
+    text-align: center;
+    position:relative;
+    top:10px;
+ 
+}
+
+
+.iframe {
+    display:none;
+}
+
+
